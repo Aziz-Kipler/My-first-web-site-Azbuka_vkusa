@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Азбука вкуса — Химки, Молодёжная 6а</title>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Азбука вкуса · Химки</p>
+    <h1>Открыто прямо<br>сейчас.</h1>
+    <p class="hero-sub">Круглосуточно, каждый день. Не нужно подстраивать день под режим работы — магазин уже открыт, когда бы вы ни зашли на эту страницу.</p>
+    <div class="hero-actions">
+      <a href="tel:+74955043478" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i data-lucide="phone"></i>Позвонить</a>
+      <a href="#location" class="btn btn-ghost"><i data-lucide="map-pin"></i>Как добраться</a>
+    </div>
+  </div>
+
+  <div class="arc-wrap">
+    <svg id="arc" viewBox="0 0 320 180" class="arc-svg"></svg>
+    <div class="arc-readout">
+      <span class="arc-time" id="arcTime">--:--</span>
+      <span class="arc-label">сейчас · магазин открыт</span>
+    </div>
+  </div>
+</section>
+
+<section class="fresh">
+  <p class="section-eyebrow">Что на прилавках</p>
+  <h2>Свежесть, которую не откладывают на завтра</h2>
+  <p class="section-lead">Овощи, рыба, колбасы и кулинария обновляются ежедневно. Нажмите на карточку — покажем, что конкретно там лежит.</p>
+
+  <div class="cards" id="cards">
+    <button class="card" data-detail="Фрукты, овощи, рыба и колбасы — привозят каждый день, без исключений.">
+      <i data-lucide="carrot"></i>
+      <span>Продукты дня</span>
+    </button>
+    <button class="card" data-detail="Круассаны Bridor, голубика Miroleto — свежая выпечка и ягоды.">
+      <i data-lucide="croissant"></i>
+      <span>Выпечка и ягоды</span>
+    </button>
+    <button class="card" data-detail="Смеси Нэнни, косметика Logona — то, что нужно для малышей.">
+      <i data-lucide="baby"></i>
+      <span>Детские товары</span>
+    </button>
+    <button class="card" data-detail="Косметика, подарочные наборы, кухонная утварь — для дома.">
+      <i data-lucide="home"></i>
+      <span>Товары для дома</span>
+    </button>
+  </div>
+  <p class="detail-out" id="detailOut">Выберите категорию выше.</p>
+</section>
+
+<section class="trust">
+  <div class="trust-rating">
+    <span class="rating-num">4.9</span>
+    <div class="rating-stars" aria-hidden="true">★★★★★</div>
+    <span class="rating-count">76 отзывов</span>
+  </div>
+  <div class="trust-quotes">
+    <p>Покупатели отдельно отмечают чистоту в зале — многим бросается в глаза, насколько там опрятно.</p>
+    <p>Свежесть фруктов, овощей, рыбы и колбас называют почти в каждом отзыве.</p>
+    <p>Персонал хвалят за вежливость и скорость — очередей на кассе почти не бывает.</p>
+    <p>Кофе в магазине отдельно выделяют как повод зайти даже без списка покупок.</p>
+  </div>
+</section>
+
+<section class="info" id="location">
+  <div class="info-grid">
+    <div class="info-block">
+      <i data-lucide="map-pin"></i>
+      <h3>Адрес</h3>
+      <p>Московская обл., Химки,<br>Молодёжная улица, ст6а<br>1 этаж</p>
+    </div>
+    <div class="info-block">
+      <i data-lucide="clock"></i>
+      <h3>Режим работы</h3>
+      <p class="mono">Ежедневно<br>00:00–24:00</p>
+    </div>
+    <div class="info-block">
+      <i data-lucide="phone"></i>
+      <h3>Телефоны</h3>
+      <p class="mono">
+        <a href="tel:+74955043478">+7 (495) 504-34-78</a><br>
+        <a href="tel:+74952230200">+7 (495) 223-02-00</a><br>
+        <a href="tel:88007003487">8-800-700-34-87</a> — бесплатно
+      </p>
+    </div>
+    <div class="info-block">
+      <i data-lucide="credit-card"></i>
+      <h3>Оплата</h3>
+      <p>Банковские карты, наличные, QR-код</p>
+    </div>
+  </div>
+</section>
+
+<section class="careers">
+  <div class="careers-inner">
+    <i data-lucide="briefcase"></i>
+    <div>
+      <h3>Ищем продавца</h3>
+      <p>От <span class="mono">91 000 ₽</span> в месяц. Полная вакансия — на hh.ru.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Азбука вкуса · Молодёжная 6а, Химки · открыто круглосуточно</p>
+</footer>
+
+<style>
+:root{
+  --bg:#FAF6EC;
+  --ink:#182119;
+  --green:#1F3B2E;
+  --green-light:#3F6852;
+  --gold:#C9A227;
+  --gold-soft:#E8D9A0;
+  --line:rgba(24,33,25,0.14);
+  --font-display:'Sora','Segoe UI',system-ui,-apple-system,sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#12180F;
+    --ink:#F1EEE3;
+    --green:#8FBFA3;
+    --green-light:#6FA085;
+    --gold:#E3C05A;
+    --gold-soft:#4A4023;
+    --line:rgba(241,238,227,0.14);
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-display);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:var(--font-mono);}
+section{padding:5rem 1.5rem;max-width:960px;margin:0 auto;}
+a{color:inherit;text-decoration:none;}
+i[data-lucide]{width:1.15em;height:1.15em;stroke-width:2;vertical-align:-0.2em;}
+
+.hero{
+  max-width:100%;
+  background:var(--green);
+  color:#FAF6EC;
+  padding:4.5rem 1.5rem 3rem;
+  display:flex;
+  flex-direction:column;
+  gap:2.5rem;
+}
+.hero-inner{max-width:640px;margin:0 auto;width:100%;text-align:center;}
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:.8rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--gold-soft);
+  margin-bottom:1rem;
+}
+.hero h1{
+  font-size:clamp(2.4rem,7vw,4rem);
+  font-weight:800;
+  letter-spacing:-0.02em;
+  line-height:1.02;
+  margin-bottom:1.25rem;
+}
+.hero-sub{
+  font-size:1.05rem;
+  color:#DDE6DE;
+  max-width:480px;
+  margin:0 auto 1.75rem;
+}
+.hero-actions{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.85rem 1.5rem;
+  border-radius:999px;
+  font-weight:600;
+  font-size:.95rem;
+  border:1.5px solid transparent;
+  transition:transform .15s ease, background .15s ease;
+}
+.btn:active{transform:scale(0.97);}
+.btn-primary{background:var(--gold);color:#1F1704;}
+.btn-primary:hover{background:#DDB432;}
+.btn-ghost{border-color:rgba(250,246,236,0.4);color:#FAF6EC;}
+.btn-ghost:hover{border-color:#FAF6EC;}
+
+.arc-wrap{
+  max-width:420px;
+  margin:0 auto;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.5rem;
+}
+.arc-svg{width:100%;height:auto;}
+.arc-readout{display:flex;flex-direction:column;align-items:center;gap:.15rem;margin-top:-1.4rem;}
+.arc-time{font-family:var(--font-mono);font-size:1.6rem;font-weight:600;color:var(--gold);}
+.arc-label{font-size:.8rem;color:#B9C6BC;letter-spacing:.03em;}
+
+.section-eyebrow{
+  font-family:var(--font-mono);
+  font-size:.78rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--green-light);
+  margin-bottom:.75rem;
+}
+.fresh h2{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800;letter-spacing:-0.01em;max-width:560px;margin-bottom:.85rem;}
+.section-lead{color:var(--green-light);max-width:520px;margin-bottom:2.25rem;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.9rem;margin-bottom:1.5rem;}
+.card{
+  background:transparent;
+  border:1.5px solid var(--line);
+  border-radius:16px;
+  padding:1.5rem 1rem;
+  display:flex;flex-direction:column;align-items:center;gap:.6rem;
+  font-family:var(--font-display);
+  font-size:.92rem;
+  font-weight:600;
+  color:var(--ink);
+  cursor:pointer;
+  transition:border-color .15s ease, background .15s ease;
+}
+.card:hover, .card.active{border-color:var(--green);background:rgba(31,59,46,0.05);}
+.card i{width:1.7em;height:1.7em;color:var(--green);}
+.detail-out{
+  font-family:var(--font-mono);
+  font-size:.92rem;
+  padding:1rem 1.25rem;
+  border-left:3px solid var(--gold);
+  background:rgba(201,162,39,0.08);
+  border-radius:4px;
+  min-height:3.2em;
+  display:flex;
+  align-items:center;
+}
+
+.trust{
+  background:rgba(31,59,46,0.04);
+  display:grid;
+  gap:2.5rem;
+  grid-template-columns:auto 1fr;
+  align-items:start;
+}
+.trust-rating{display:flex;flex-direction:column;align-items:center;gap:.15rem;}
+.rating-num{font-family:var(--font-mono);font-size:3rem;font-weight:700;color:var(--green);}
+.rating-stars{color:var(--gold);font-size:1.1rem;letter-spacing:.1em;}
+.rating-count{font-size:.82rem;color:var(--green-light);}
+.trust-quotes{display:grid;gap:.9rem;}
+.trust-quotes p{
+  font-size:.95rem;
+  padding-left:1rem;
+  border-left:2px solid var(--line);
+  color:var(--ink);
+}
+
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.75rem;}
+.info-block i{color:var(--gold);width:1.6em;height:1.6em;margin-bottom:.6rem;}
+.info-block h3{font-size:1rem;font-weight:700;margin-bottom:.4rem;}
+.info-block p{font-size:.92rem;color:var(--green-light);}
+.info-block a:hover{color:var(--green);text-decoration:underline;}
+
+.careers{padding-top:0;padding-bottom:0;max-width:100%;}
+.careers-inner{
+  max-width:960px;margin:0 auto;
+  background:var(--gold-soft);
+  border-radius:20px;
+  padding:2rem 1.75rem;
+  display:flex;
+  align-items:center;
+  gap:1.25rem;
+}
+.careers-inner i{width:2em;height:2em;color:var(--green);flex-shrink:0;}
+.careers-inner h3{font-size:1.15rem;font-weight:800;margin-bottom:.25rem;}
+.careers-inner p{font-size:.95rem;color:var(--ink);}
+
+footer{
+  text-align:center;
+  padding:2.5rem 1.5rem 3rem;
+  font-size:.82rem;
+  color:var(--green-light);
+  font-family:var(--font-mono);
+}
+
+@media (max-width:640px){
+  .trust{grid-template-columns:1fr;justify-items:center;text-align:center;}
+  .trust-quotes p{text-align:left;}
+}
+</style>
+
+<script>
+(function(){
+  const svg = document.getElementById('arc');
+  const NS = 'http://www.w3.org/2000/svg';
+  const cx = 160, cy = 160, r = 130;
+
+  function polar(hourFraction){
+    const angle = Math.PI + hourFraction * Math.PI;
+    return { x: cx + r * Math.cos(angle), y: cy + r * Math.sin(angle) };
+  }
+
+  const track = document.createElementNS(NS,'path');
+  const start = polar(0), end = polar(1);
+  track.setAttribute('d', `M ${start.x} ${start.y} A ${r} ${r} 0 0 1 ${end.x} ${end.y}`);
+  track.setAttribute('fill','none');
+  track.setAttribute('stroke','rgba(250,246,236,0.18)');
+  track.setAttribute('stroke-width','10');
+  track.setAttribute('stroke-linecap','round');
+  svg.appendChild(track);
+
+  for(let h=0; h<=24; h+=3){
+    const p = polar(h/24);
+    const isDay = h >= 6 && h <= 20;
+    const dot = document.createElementNS(NS,'circle');
+    dot.setAttribute('cx', p.x);
+    dot.setAttribute('cy', p.y);
+    dot.setAttribute('r', 3.5);
+    dot.setAttribute('fill', isDay ? '#E8D9A0' : 'rgba(250,246,236,0.3)');
+    svg.appendChild(dot);
+
+    const lx = cx + (r+18) * Math.cos(Math.PI + (h/24) * Math.PI);
+    const ly = cy + (r+18) * Math.sin(Math.PI + (h/24) * Math.PI);
+    const label = document.createElementNS(NS,'text');
+    label.setAttribute('x', lx);
+    label.setAttribute('y', ly+4);
+    label.setAttribute('text-anchor','middle');
+    label.setAttribute('font-size','9');
+    label.setAttribute('font-family','IBM Plex Mono, monospace');
+    label.setAttribute('fill','rgba(250,246,236,0.45)');
+    label.textContent = String(h).padStart(2,'0');
+    svg.appendChild(label);
+  }
+
+  const now = new Date();
+  const frac = (now.getHours() + now.getMinutes()/60) / 24;
+  const nowP = polar(frac);
+
+  const pulse = document.createElementNS(NS,'circle');
+  pulse.setAttribute('cx', nowP.x);
+  pulse.setAttribute('cy', nowP.y);
+  pulse.setAttribute('r', 9);
+  pulse.setAttribute('fill', 'rgba(201,162,39,0.35)');
+  svg.appendChild(pulse);
+  pulse.animate(
+    [{r:9, opacity:0.6},{r:16, opacity:0}],
+    {duration:1600, iterations:Infinity}
+  );
+
+  const marker = document.createElementNS(NS,'circle');
+  marker.setAttribute('cx', nowP.x);
+  marker.setAttribute('cy', nowP.y);
+  marker.setAttribute('r', 6.5);
+  marker.setAttribute('fill', '#C9A227');
+  marker.setAttribute('stroke', '#1F3B2E');
+  marker.setAttribute('stroke-width', '2');
+  svg.appendChild(marker);
+
+  document.getElementById('arcTime').textContent =
+    String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
+})();
+
+(function(){
+  const cards = document.querySelectorAll('.card');
+  const out = document.getElementById('detailOut');
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      cards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+      out.textContent = card.dataset.detail;
+    });
+  });
+})();
+
+if (window.lucide) { lucide.createIcons(); }
+</script>
+</body>
+</html>
+
